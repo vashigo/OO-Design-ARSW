@@ -3,7 +3,12 @@
 
 # TAREA 1 ARSW (OO Design)
 
-
+Write a program to calculate the mean and standard deviation of a set of n real
+numbers.
+Your program reads the n real numbers from a file.
+Use a linked list to store the n numbers for the calculations. (Note: You have
+to write your own implementation of a linked list and it must be compliant
+with Java’s collections API)
 
 # LOC/h. Rendimiento
 
@@ -50,11 +55,14 @@ mvn javadoc:javadoc
 ```
 
 2. (Demostracion):
-  compile el proyecto desde la carpeta raiz ejecutando la siguiente linea:
+  compile el proyecto desde la carpeta raiz ejecutando la siguiente linea y mandando el archivo de datos:
   
 ```
 java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/main/resources/datos.txt
 ```
+<p align="center">
+ <img  src="img/compile.JPG">
+</p>
 
 # Application architecture design
 
