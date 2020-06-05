@@ -7,33 +7,35 @@
 
 # LOC/h. Rendimiento
 
-1. desde las 10:00pm hasta las 11:00pm
+1. desde las 10:00pm hasta las 1:00am - 429 LOC
+2. desde las 10:am hasta las 1:00am - 205 LOC
 
-LOC = (/)
+total LOC = (634/6) = 106LOC
 
-##  LOC
+##  106 LOC
 
 
 # Documentación
 
 la documentacion de este proyecto esta en la siguiente ruta del proyecto:
+
 ```
-raiz /doc
+raiz /documentacion
 ```
 
 
-## EMPEZAR
+# EMPEZAR
 
 Copie el proyecto via git clone en cualquier diretorio para empezar a trabajar:
 ```
 git clone https://github.com/vashigo/OO-Design-ARSW.git
 ```
 
-### Prerequisitos
+## Prerequisitos
 
 Tener instalado Java jdk versiones 7+, Maven comandos y git
 
-### Instalando
+## Instalando
 
 1. Ejecutar en terminal:
 
@@ -54,7 +56,15 @@ mvn javadoc:javadoc
 java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/main/resources/datos.txt
 ```
 
-## Test Report
+# Application architecture design
+
+### class Diagram
+
+<p align="center">
+ <img  src="img/classDiagram.JPG">
+</p>
+
+# Test Report
 
 ### resultado de pruebas
 
@@ -74,18 +84,18 @@ Prueba 3 | Prueba 4
 ![1](img/prueba3MeansDouble.JPG) | ![2](img/prueba4SDeviationDouble.JPG)
 En esta prueba se probaron los datos de la columna 2 y calculandole su media| En esta prueba se probaron los datos de la columna 2 y calculandole su Desviación Estandar
 
-## Built con
+# Built con
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [JAVA JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html) - construcción
 * [JUnit 3.8.1](https://mvnrepository.com/artifact/junit/junit/3.8.1) - Test Dependency
 
 
-## Autor
+# Autor
 
 * **ANDRES DAVID VASQUEZ IBAÑEZ** - *Initial work* - [VASHIGO](https://github.com/vashigo)
 
 
-## Licencia
+# Licencia
 
 This project is licensed under the GNU General Public License - see the [LICENSE](LICENSE) file for details
