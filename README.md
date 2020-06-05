@@ -64,6 +64,7 @@ java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/main/res
  <img  src="img/compile.JPG">
 </p>
 
+
 # Application architecture design
 
 ### class Diagram
@@ -71,6 +72,16 @@ java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/main/res
 <p align="center">
  <img  src="img/classDiagram.JPG">
 </p>
+
+se intento seguir aunque no al 100% porque falta invoker y receiver pero la logica de el patron de diseño comando se sigue en:
+
+- Calcultator = Switch
+- execute = operation
+- Comand = DoubleMath y IntegerMath
+
+y se siguio con la condicion de LinkedList que en este caso se implemento una lista de la colleccion de java API pero qué por dentro tiene toda la logica de una  linkedlist. Tambien LinkedList es Generica osea puede almacenar cualquier tipo de objeto.
+
+- FileReader es el intermediario para comunicarse con el cliente y LinkedList para poder transformar la informacion segun la logica del contexto.
 
 # Test Report
 
