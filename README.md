@@ -54,7 +54,25 @@ mvn javadoc:javadoc
 java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/main/resources/datos.txt
 ```
 
-  
+## Test Report
+
+### resultado de pruebas
+
+<p align="center">
+ <img  src="img/resPruebas.JPG">
+</p>
+
+### pruebas
+
+Prueba 1 | Prueba 2
+------------ | ------------- 
+![1](img/prueba1MeansInteger.JPG) | ![2](img/prueba2SDeviationInteger.JPG)
+En esta prueba se probaron los datos de la columna 1 y calculandole su media| En esta prueba se probaron los datos de la columna 1 y calculandole su Desviación Estandar
+
+Prueba 3 | Prueba 4
+------------ | ------------- 
+![1](img/prueba3MeansDouble.JPG) | ![2](img/prueba4SDeviationDouble.JPG)
+En esta prueba se probaron los datos de la columna 2 y calculandole su media| En esta prueba se probaron los datos de la columna 2 y calculandole su Desviación Estandar
 
 ## Built con
 
