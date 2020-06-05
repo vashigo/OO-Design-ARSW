@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.escuelaing.arsw.tarea2.fileReader;
 
 import edu.escuelaing.arsw.tarea2.linkedList.LinkedListGeneric;
@@ -14,33 +9,63 @@ import java.nio.file.Path;
 import java.util.List;
 
 /**
- *
+ * class that receives a data.txt file and converts it into a linkedList
+ * according to business logic
+ * 
  * @author Vashi
  */
 public class FileReader {
 
-    private List<Double> list;
-    private Charset charset;
+    private final List<Double> listProxySize;
+    private final List<Double> listDevHours;
+    private final Charset charset;
 
     public FileReader() {
-        this.list = new LinkedListGeneric<>();
+        this.listProxySize = new LinkedListGeneric<>();
+        this.listDevHours = new LinkedListGeneric<>();
         this.charset = Charset.forName("UTF-8");
     }
 
-    public List<Double> getNumbers(Path file) throws Exception {
+    /**
+     * receives a data.txt file and converts it into a two linkedList
+     * 
+     * @author Vashi
+     * @param file - file data.txt
+     * @throws java.lang.Exception
+     */
+    public void getNumbers(Path file) throws Exception {
         try {
             BufferedReader BR = Files.newBufferedReader(file, this.charset);
             String linea = BR.readLine();
             while (linea != null) {
                 String[] tmp = linea.split(" ");
-                for (String s : tmp) {
-                    this.list.add(Double.parseDouble(s));
-                }
+                this.listProxySize.add(Double.parseDouble(tmp[0]));
+                this.listDevHours.add(Double.parseDouble(tmp[1]));
                 linea = BR.readLine();
             }
         } catch (IOException ex) {
             throw new Exception("Error leyendo el archivo, revise la ruta");
         }
-        return this.list;
     }
+
+    /**
+     * get Proxy Size LinkedList
+     *
+     * @author Vashi
+     * @return the Proxy Size LinkedList
+     */
+    public List<Double> getListProxySize() {
+        return listProxySize;
+    }
+
+    /**
+     * get Developer Hours LinkedList
+     *
+     * @author Vashi
+     * @return the Developer Hours  LinkedList
+     */
+    public List<Double> getListDevHours() {
+        return listDevHours;
+    }
+
 }

@@ -1,16 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.escuelaing.arsw.tarea2.linkedList;
 
 import java.util.*;
 
 /**
- *
+ * implementation of a list that inside is a linkedList
+ * 
  * @author vashi
- * @param <E>
+ * @param <E> object Generic
  */
 public class LinkedListGeneric<E> implements List<E> {
 

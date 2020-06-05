@@ -51,7 +51,7 @@ mvn javadoc:javadoc
   compile el proyecto desde la carpeta raiz ejecutando la siguiente linea:
   
 ```
-java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/test/resources/datos.txt
+java -cp target/app-1.0-SNAPSHOT.jar edu.escuelaing.arsw.tarea2.App src/main/resources/datos.txt
 ```
 
   
